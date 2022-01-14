@@ -17,7 +17,8 @@
 
 ## 💻 Projeto
 
-Página que contém um toggle para alternar entre o tema dark e light.
+- Página que contém um toggle para alternar entre o tema dark e light. 
+- Salvando o tema no Local Storage;
 
 ## 🚀 Tecnologias
 
