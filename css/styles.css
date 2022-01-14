@@ -1,0 +1,86 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --dark: #292C35;
+    --light: #F1F1F1;
+    --label: #111;
+}
+
+.theme-dark {
+    --background: var(--dark);
+    --font-color: #ffffff;
+}
+
+.theme-light {
+    --background: var(--light);
+    --font-color: #000000;
+}
+
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+
+    background-color: var(--background);
+    color: var(--font-color);
+    transition: background-color .2s linear;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+p {
+    font-size: 100%;
+    font-family:'Poppins', sans-serif;
+    margin-top: 2.5rem;
+}
+
+.checkbox {
+    opacity: 0;
+    position: absolute;
+}
+
+.checkbox:checked + .switcher .ball {
+    transform: translateX(7.80rem);
+}
+
+.switcher {
+    background-color: var(--label);
+    width: 14.71rem;
+    height: 6.37rem;
+    border-radius: 4rem;
+    padding: .75rem;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: relative;
+
+    transform: scale(1.5);
+    cursor: pointer;
+  }
+
+.sun, .moon {
+    width: 5.77rem;
+    height: 5.77rem;
+}
+
+.ball {
+    background-color: #F1F1F1;
+    height: 5.39rem;
+    width: 5.39rem;
+
+    position: absolute;
+    border-radius: 100%;
+    transition: transform .2s linear;
+}
+
