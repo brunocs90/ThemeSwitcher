@@ -12,7 +12,7 @@
 <br>
 
 <p align="center">
-  <img alt="layout" src="./assets/layout.gif" width="60%">
+  <img alt="layout" src="./assets/layout.gif" width="100%">
 </p>
 
 ## 💻 Projeto
